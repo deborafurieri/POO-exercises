@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 public class BancoImpl {
 	public static void main(String[] args) {
 
-		List<ContaCorrente> contas = new ArrayList<ContaCorrente>();
+		Banco banco = new Banco();
 		ContaCorrente c1 = new ContaCorrente();
 		ContaCorrente c2 = new ContaCorrente();
 		ContaCorrente c3 = new ContaCorrente();
@@ -41,13 +41,13 @@ public class BancoImpl {
 		c2.deposito(25);
 		c3.deposito(15);
 
-		contas.add(c1);
-		contas.add(c2);
-		contas.add(c3);
+		banco.adicionaConta(c1);
+		banco.adicionaConta(c2);
+		banco.adicionaConta(c3);
 
 		// imprimir da lista de contas correntes o saldo total de todas as
 		// contas;
-		for (Iterator<ContaCorrente> iter = contas.iterator(); iter.hasNext();) {
+		for (Iterator<ContaCorrente> iter = banco.getContas().iterator(); iter.hasNext();) {
 			
 			ContaCorrente c = iter.next();
 			System.out.println("\tEXTRATO\t");
