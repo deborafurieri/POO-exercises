@@ -1,7 +1,9 @@
-
-.metadata/*
+.recommenders/
+.metadata/
 *.zip
 
 *.xmi
 
 .metadata/.log
+
+.metadata/.plugins/org.eclipse.core.resources/.projects/ProgramacaoOrientadaAObjeto/.markers.snap
