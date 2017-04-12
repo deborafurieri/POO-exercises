@@ -1,0 +1,10 @@
+package banco;
+
+interface ContaCorrente {
+	
+	int numero;
+	int saldo;
+	boolean status;
+	int limite;
+	
+}

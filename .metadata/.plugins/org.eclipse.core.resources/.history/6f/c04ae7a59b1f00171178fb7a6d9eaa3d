@@ -1,0 +1,36 @@
+package banco;
+import java.util.ArrayList;
+import java.util.List;
+
+public class BancoImpl{
+	public static void main(String[] args) {
+		
+		ContaCorrente c1 = new ContaCorrente();
+		ContaCorrente c2 = new ContaCorrente();
+		ContaCorrente c3 = new ContaCorrente();
+		
+		List<ContaCorrente> conta = new ArrayList<ContaCorrente>();
+		conta.add(c1);
+		conta.add(c3);
+		conta.add(c2);
+		
+		c1.setNome("Joao");
+		c2.setNome("Jose");
+		c3.setNome("Maria");
+		
+		c1.setNumero("123-4");
+		c2.setNumero("123-5");
+		c3.setNumero("123-6");
+		
+		c1.setLimite(1000);
+		c2.setLimite(2000);
+		c3.setLimite(3000);
+		
+		c1.setSaldo(2000);
+		c2.setSaldo(1000);
+		c1.transferencia(c2,2000);
+		c1.extrato();
+	
+
+	}
+}

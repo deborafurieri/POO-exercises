@@ -1,0 +1,45 @@
+package banco;
+
+public class Banco{
+	
+	private int saldo;
+	private String numero;
+	
+	public void saque(double valor) {
+		this.saldo -= valor;
+		if (this.saldo < valor) {
+			throw new IllegalArgumentException("Saldo insuficiente");
+		} else {
+			this.saldo -= valor;
+			System.out.println("Sacado: " + valor);
+			System.out.println("Novo saldo: " + this.saldo + "\n");
+		}
+	}
+
+	public void deposito(double deposito) {
+		if (deposito <= 0) {
+			throw new IllegalArgumentException("Valor precisa ser maior que 0");
+		} else {
+			this.saldo += deposito;
+			System.out.println("Depositado: " + deposito);
+			System.out.println("Novo saldo: " + this.saldo + "\n");
+		}
+	}
+
+	public void transferencia(ContaCorrente c, double valor){
+		this.saque(valor);
+		c.deposito(valor);
+		c.saldo+=valor;
+			System.out.println("Transferido: " + valor);
+			System.out.println("Novo saldo: " + c.saldo + "\n");
+		}
+	
+
+	public void extrato() {
+		System.out.println("\tEXTRATO");
+		System.out.println("Número da conta: " + this.numero);
+		System.out.printf("Saldo atual: %.2f\n", this.saldo);
+	}
+	
+
+}

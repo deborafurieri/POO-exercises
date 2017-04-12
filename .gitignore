@@ -2,3 +2,5 @@
 *.zip
 
 *.xmi
+
+.metadata/.log
