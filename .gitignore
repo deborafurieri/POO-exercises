@@ -1,0 +1,32 @@
+MANIFEST.MF
+
+# arquivos nativos mac
+.DS_Store
+Thumbs.db
+
+# arquivos gerais
+*.dat
+*.index
+*.swp
+*.swo
+*.swm
+*.swn
+*.pyc
+*.log
+*.class
+*.ast
+*.jasper
+*.jar
+*.war
+*.ear
+.classpath
+.project
+.settings
+.checkstyle
+.pmd
+.ruleset
+.springBeans
+.pmdruleset.xml
+.metadata/
+.recommenders/
+.sonarlint/*
