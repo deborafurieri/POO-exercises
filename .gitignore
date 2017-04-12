@@ -1,4 +1,5 @@
 
+.metadata/*
 *.zip
 
 *.snap
@@ -96,3 +97,13 @@ bower_components
 env/assets/themes/.project
 .sublime-grunt.cache
 commerce-engine/search/ep-search-acceptance-tests/src/assets/conf/resources/ruleUpdate.properties
+
+.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps
+
+.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+
+.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap
+
+.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.syncinfo.snap
+
+.metadata/.log
