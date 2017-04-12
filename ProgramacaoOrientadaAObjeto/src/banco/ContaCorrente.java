@@ -1,6 +1,6 @@
 package banco;
 
-public class ContaCorrente extends Banco	{
+public class ContaCorrente extends Banco{
 	protected String nome;
 	protected String numero;
 	protected double saldo;
