@@ -13,7 +13,7 @@ public class BancoImpl {
 		ContaCorrente c1 = new ContaCorrente();
 		ContaCorrente c2 = new ContaCorrente();
 		ContaCorrente c3 = new ContaCorrente();
-		
+		 
 		c1.setNome(JOptionPane.showInputDialog("Entre com seu nome"));
 		c1.setNumero(JOptionPane.showInputDialog("Entre com o numero de sua Conta Corrente"));
 		
