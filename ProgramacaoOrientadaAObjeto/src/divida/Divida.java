@@ -1,15 +1,14 @@
 package divida;
 
-import java.util.ArrayList;	
+import java.util.ArrayList;
 
 public class Divida {
 	private double valorTotal;
 	private double valorPago;
 	private String nomeCredor;
 	private String cnpjCredor;
-
 	private ArrayList<Pagamento> pagamentos = new ArrayList<Pagamento>();
-
+	
 	public ArrayList<Pagamento> getPagamentos() {
 		return this.pagamentos;
 	}
